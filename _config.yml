@@ -1,0 +1,12 @@
+name: "anxibits"
+description: "Random encounters of rage and fun"
+author: "Jxnblk"
+
+highlighter: pygments
+markdown: redcarpet
+
+url: "http://localhost:4000"
+
+exclude: [README.md, Rakefile]
+paginate: 16
+permalink: /:title
