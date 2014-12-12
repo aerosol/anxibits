@@ -72,4 +72,4 @@ Eshell V5.10.3  (abort with ^G)
  {error_logger,tty}]
 ```
 
-Voila.
+Et voilà.
