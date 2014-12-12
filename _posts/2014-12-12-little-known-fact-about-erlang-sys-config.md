@@ -52,7 +52,7 @@ Configuration will pick it up.
            {inet_dist_listen_max, 10015},
            {database_for_example_purposes, "db://0.0.0.0:8080"},
           ]},
-    "/etc/region/config"].
+    "/etc/region.config"].
 {% endhighlight %}
 </figure>
 
