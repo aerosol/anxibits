@@ -93,9 +93,8 @@ Losh](http://stevelosh.com/), since it requires no extra configuration and
 provides a set of defaults that just work for me.
 
 `tmux` is my daily-driver. I used to use iTerm2 but then ditched it for
-standard OSX Terminal (for lolspeed) and `tmux`. Couldn't be happier ever
-since, especially with the marvelous [tmux-plugins
-suite](https://github.com/tmux-plugins). 
+standard OSX Terminal (for lolspeed) and `tmux` and I've been happy ever since,
+especially with the marvelous [tmux-plugins suite](https://github.com/tmux-plugins). 
 
 The way `tslime` works is it can send any input to a particular triple
 of session/pane/window.
@@ -103,7 +102,7 @@ of session/pane/window.
 I use the default `C-c C-c` keybinding which works with visual selections as
 well. It's emacsy - yes. I use [PFU
 HHKB](http://www.pfu.fujitsu.com/hhkeyboard/) keyboard and it taught me that
-Ctrl key's place is where the world think Caps Lock should be. Remapping your
+Ctrl key's place is where the world thinks Caps Lock should be. Remapping your
 Caps Lock to Ctrl is a game changer and I encourage you to try it. With OSX it's super easy:
 
 ![](http://i.imgur.com/MsW3Bgq.png)
