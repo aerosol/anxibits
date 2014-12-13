@@ -143,7 +143,7 @@ height: 110px;
 -webkit-border-radius: 50%; /* Can also be 55px */
 -moz-border-radius: 50%;
 border-radius: 50%;
-float: left;
+float: right;
 margin-right: 10px;
  }
 
