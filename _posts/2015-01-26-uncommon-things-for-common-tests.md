@@ -195,10 +195,10 @@ compare([V1|L1], [V2|L2]) ->
     end.
 
 compare_values([{_,_}|_] = Obj1, [{_,_}|_] = Obj2) ->
-    assertDeepLove(Obj1, Obj2);
+    assert_deep_love(Obj1, Obj2);
 compare_values(L1, L2)
   when is_list(L1) and is_list(L2) ->
-    assertDeepLove(L1, L2);
+    assert_deep_love(L1, L2);
 compare_values(V1, V2) ->
     {false, { {expected, V1}, {got, V2} }}.
 ```
