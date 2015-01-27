@@ -3,10 +3,9 @@ layout: post
 title: "Uncommon Things for Common Tests"
 ---
 
-As far as the Erlang testing tyranny goes, here are some snippets I've
-collected over the years with the great help of my teammates. Shout out to the
-Regulators crew, you know how we do. All of this falls into the "sh*t is
-difficult to google" category.
+As far as the Erlang testing goes, here are some snippets I've
+collected over the years with the great help of my teammates (shout out to the
+Regulators crew!).
 
 ## First things first
 
@@ -36,10 +35,8 @@ switch.
 
 ## Common fixtures directory
 
-It's a bit of PITA with CT to have one single directory for all your fixtures,
-since the CT-enforced convention is that you need a `long_name_bc_naming_is_hart_SUITE`
-directory per suite. We were pretty fed up with that; reusing fixtures is
-usually the bread and butter of medium/large systems. We came up with following solution:
+The CT-enforced convention is to have one data directory per suite.  We were fed up with that;
+reusing fixtures is usually the bread and butter of medium/large systems.
 
 ```erlang
 set_fixt_dir(Test, Config) ->
@@ -76,8 +73,7 @@ t_do_what_i_tell_you(Config) ->
 ## Exporting all the tests
 
 Have you noticed the `t_NAME` convention for a test case I used in the previous
-paragraph? This is extremely handy when you choose not to use groups.
-They are useful, yup. But if you don't use them, try the following:
+paragraph? This comes in handy when you choose not to use groups.
 
 ```erlang
 all_tests(Module) ->
@@ -104,7 +100,7 @@ you about the unexported ones.
 
 ## Debug calls
 
-Let's just assume, for the purpose of the following example, that your system
+Let's assume, for the purpose of the following example, that your system
 has become too hard to reason about, especially when it comes to testing async routines.
 First of all, `dbg` works here too.
 
@@ -158,12 +154,10 @@ keep_trying_receive(Match, Sleep, Tries) ->
 
 ## Comparing JSON dudes
 
-I'm not into maps really. Mostly because I have never tried them due to
-different circumstances, so yeah, I just deal with the tyranny of `jsx`
-(which is a great library, FWIW). We often need to put some JSON somewhere
-and check if the output matches a JSON elsewhere. We have written a function
+Dure to different circumstance I have never tried maps.  We often need to put some JSON 
+somewhere and check if the output matches a JSON elsewhere. We have written a function
 that tries to deeply compare two lists of tuples at least as far as `jsx`
-is concerned. It ain't pefect, but feel free to contribute:
+is concerned.
 
 ```erlang
 assert_deep_love(Expected, Got) ->
