@@ -3,7 +3,7 @@ layout: post
 title: "Elixir vs Erlang"
 ---
 
-A friend of mine who is learning Elixir asked me how would I write a function
+A friend of mine who is learning Elixir asked me how I would write a function
 that takes a length `n` and a char `c` to build a string consisting of `n`
 chars `c`.
 
